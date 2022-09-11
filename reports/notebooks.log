@@ -17,20 +17,18 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-plt.figure()
-sns.distplot(value)
-plt.title('Graph skewned value')
-plt.show()
+split1 = splitter(4.4, "Sepal.Length")
+info_split1 = info(split1)
+gain(entropy_d, info_split1)
 ------------------
 
 [0;31m[0m
 [0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-1-99147724c926>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      2[0m [0msns[0m[0;34m.[0m[0mdistplot[0m[0;34m([0m[0mvalue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      3[0m [0mplt[0m[0;34m.[0m[0mtitle[0m[0;34m([0m[0;34m'Graph skewned value'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      4[0m [0mplt[0m[0;34m.[0m[0mshow[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m<ipython-input-24-14c837064c08>[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0msplit1[0m [0;34m=[0m [0msplitter[0m[0;34m([0m[0;36m4.4[0m[0;34m,[0m [0;34m"Sepal.Length"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0minfo_split1[0m [0;34m=[0m [0minfo[0m[0;34m([0m[0msplit1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0mgain[0m[0;34m([0m[0mentropy_d[0m[0;34m,[0m [0minfo_split1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mNameError[0m: name 'plt' is not defined
-NameError: name 'plt' is not defined
+[0;31mNameError[0m: name 'info' is not defined
+NameError: name 'info' is not defined
 
